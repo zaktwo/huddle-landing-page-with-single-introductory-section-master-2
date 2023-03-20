@@ -77,15 +77,19 @@ h6 {
 ****************************************************************/
 
 body {
-  height: 100%;
-  display: flex;
+  min-height: 100vh;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   background: url(./images/bg-mobile.svg), var(--Violet);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  margin: 0 auto;
+
 }
 .container {
+  margin: 0 auto;
+  height: auto;
   padding: 4%;
 }
 .container,
@@ -101,10 +105,14 @@ body {
 ****************************************************************/
 .top-section {
   flex-basis: 50%;
-  
+  /* margin-bottom: 2rem; */
 }
-.logo{
-  padding-bottom: 4.5rem;
+.logo >img{
+  padding-bottom: 3rem;
+  min-height: 100%;
+}
+.illustration{
+  min-height: 100%;
 }
 
 /***************************************************************
@@ -113,6 +121,7 @@ body {
 .bottom-section {
   /* text-align: center; */
   flex-basis: 50%;
+  justify-content: space-between;
 }
 .bottom-section > h1 {
   display: flex;
@@ -122,10 +131,12 @@ body {
 .title {
   text-align: center;
   padding-bottom: 1.5rem;
+  color: white;
 }
 .description {
   text-align: center;
   padding-bottom: 1.5rem;
+  color: white;
 }
 .button {
   color: var(--Violet);
@@ -137,6 +148,13 @@ body {
   border: none;
   -webkit-box-shadow: 0px 0px 16px 2px rgba(52, 52, 52, 0.49);
   box-shadow: 0px 0px 16px 2px rgba(52, 52, 52, 0.49);
+}
+.social{
+  color: white;
+  width: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: end;
 }
 /** .attribution {
     font-size: 11px;
@@ -151,10 +169,12 @@ body {
 ****************************************************************/
 @media (min-width: 850px) {
   body {
+   
     background: url(./images/bg-desktop.svg), var(--Violet);
     background-repeat: no-repeat;
-    /* background-size: 100%; */
+    background-size: cover;
     border: 2px solid yellow;
+    min-height: 100vh;
   }
   .container {
     display: flex;
@@ -169,6 +189,7 @@ body {
     display: flex;
     flex-basis: 50%;
     /* width: 50%; */
+    border: 2px solid greenyellow;
   }
   .bottom-section {
     display: flex;
@@ -177,7 +198,8 @@ body {
     flex-basis: 50%;
     padding: 2rem;
     /* width: 50%; */
-    height: 100%;
+    /* height: 100%; */
     align-content: start;
+    border: 2px solid gold;
   }
 }
