@@ -1,0 +1,171 @@
+
+/***************************************************************
+                           Variables
+****************************************************************/
+:root{
+--Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+/***************************************************************
+                           CSS Reset
+****************************************************************/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+
+/***************************************************************
+                           Shared CSS 
+****************************************************************/
+
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/bg-mobile.svg),  var(--Violet);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.container, .top-section, .bottom-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4%;
+}
+/***************************************************************
+                           Top Section
+****************************************************************/
+.top-section{
+  flex-basis: 50%;
+}
+/***************************************************************
+                           Bottom Section
+****************************************************************/
+.bottom-section{
+   /* text-align: center; */
+   flex-basis: 50%;
+}
+.bottom-section >h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+text-align: center;
+}
+.description{
+text-align: center;
+}
+.button{
+    color: var(--Violet);
+    background-color: white;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+   border: none;
+   -webkit-box-shadow: 0px 0px 16px 2px rgba(52,52,52,0.49); 
+   box-shadow: 0px 0px 16px 2px rgba(52,52,52,0.49);
+}
+/** .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  } */
+/***************************************************************
+                           Media Querie
+****************************************************************/
+@media (min-width: 500px){
+    body{
+        background: url(./images/bg-desktop.svg),var(--Violet);
+        background-repeat: no-repeat;
+        /* background-size: 100%; */
+        border: 2px solid yellow;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        border: 2px solid red;
+        width: 95%;
+        
+    }
+    .top-section{
+        display: flex;
+        flex-basis: 50%;
+        /* width: 50%; */
+    }
+    .bottom-section{
+        display: flex;
+        align-items: start;
+        flex-basis: 50%;
+        padding: 2rem;
+        /* width: 50%; */
+    }
+}
