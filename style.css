@@ -149,7 +149,7 @@ body {
 /***************************************************************
                            Media Querie
 ****************************************************************/
-@media (min-width: 500px) {
+@media (min-width: 850px) {
   body {
     background: url(./images/bg-desktop.svg), var(--Violet);
     background-repeat: no-repeat;
