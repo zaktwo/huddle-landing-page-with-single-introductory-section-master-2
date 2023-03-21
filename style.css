@@ -242,7 +242,9 @@ body {
     /* position: absolute; */
     /*To position a div you to take into 
     consideration margins also*/
-    margin-left: auto;
-    margin-right: 0;
+    /* margin-left: auto;
+    margin-right: 0; */
+    /*alinging with align-self:flex-end;*/
+    align-self: flex-end;
   }
 }
