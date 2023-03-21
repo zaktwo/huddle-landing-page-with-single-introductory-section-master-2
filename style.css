@@ -215,7 +215,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     /* border: 2px solid red; */
     /* width: 95%; */
     padding: 0;
@@ -223,6 +223,12 @@ body {
     position: relative;
     height: 100%;
     padding-bottom: 2%;
+  }
+  .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
   }
   .top-section {
     display: flex;
@@ -252,8 +258,9 @@ body {
     text-align: start;
   }
   .social {
-    /* display: flex; */
-    /* justify-content: flex-end; */
+    display: flex;
+    padding: 2%;
+    justify-content: flex-end;
     /* position: absolute; */
     /*To position a div you to take into 
     consideration margins also*/
@@ -261,5 +268,11 @@ body {
     margin-right: 0; */
     /*alinging with align-self:flex-end;*/
     align-self: flex-end;
+   margin-top: 0;
+  }
+  .social > a  {
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
   }
 }
