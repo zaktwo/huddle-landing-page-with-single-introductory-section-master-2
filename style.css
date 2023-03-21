@@ -86,9 +86,10 @@ body {
   background-size: cover;
   margin: 0 auto;
   /* margin-top: 2rem; */
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 .container {
-  
   margin: 0 auto;
   height: auto;
   padding: 4%;
@@ -108,11 +109,11 @@ body {
   flex-basis: 50%;
   /* margin-bottom: 2rem; */
 }
-.logo >img{
+.logo > img {
   padding-bottom: 3rem;
   min-height: 100%;
 }
-.illustration{
+.illustration {
   min-height: 100%;
 }
 
@@ -133,11 +134,14 @@ body {
   text-align: center;
   padding-bottom: 1.5rem;
   color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 .description {
   text-align: center;
   padding-bottom: 1.5rem;
   color: white;
+  font-weight: 400;
 }
 .button {
   color: var(--Violet);
@@ -150,13 +154,35 @@ body {
   -webkit-box-shadow: 0px 0px 16px 2px rgba(52, 52, 52, 0.49);
   box-shadow: 0px 0px 16px 2px rgba(52, 52, 52, 0.49);
 }
-.social{
-  color: white;
-  width: 1rem;
-  display: flex;
-  justify-content: end;
-  align-items: end;
+.button:hover {
+  cursor: pointer;
+  background-color: var(--Soft-Magenta);
 }
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid black;
+  min-width: 30%;
+  margin-top: 5rem;
+}
+.social > a {
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.social > a:hover {
+  cursor: pointer;
+  border: 2px solid var(--Soft-Magenta);
+  color: var(--Soft-Magenta);
+}
+
 /** .attribution {
     font-size: 11px;
     text-align: center;
@@ -170,7 +196,6 @@ body {
 ****************************************************************/
 @media (min-width: 850px) {
   body {
-   
     background: url(./images/bg-desktop.svg), var(--Violet);
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,6 +211,7 @@ body {
     width: 95%;
     padding: 0;
     margin-top: 50px;
+    position: relative;
   }
   .top-section {
     display: flex;
@@ -195,13 +221,23 @@ body {
   }
   .bottom-section {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: start;
     flex-basis: 50%;
     padding: 2rem;
     /* width: 50%; */
     /* height: 100%; */
-    align-content: start;
+    /* align-content: start; */
     border: 2px solid gold;
+    height: 100%;
+    /* text-align: start; */
+  }
+  .bottom-section * {
+    text-align: start;
+  }
+  .social {
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* position: absolute; */
   }
 }
