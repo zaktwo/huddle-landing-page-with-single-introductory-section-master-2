@@ -163,7 +163,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   min-width: 30%;
   margin-top: 5rem;
 }
@@ -176,6 +176,7 @@ body {
   justify-content: center;
   border: 2px solid white;
   border-radius: 50%;
+  
 }
 .social > a:hover {
   cursor: pointer;
@@ -199,7 +200,7 @@ body {
     background: url(./images/bg-desktop.svg), var(--Violet);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     min-height: 100vh;
   }
   .container {
@@ -207,7 +208,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 95%;
     padding: 0;
     margin-top: 50px;
@@ -217,7 +218,7 @@ body {
     display: flex;
     flex-basis: 50%;
     /* width: 50%; */
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
   }
   .bottom-section {
     display: flex;
@@ -228,7 +229,7 @@ body {
     /* width: 50%; */
     /* height: 100%; */
     /* align-content: start; */
-    border: 2px solid gold;
+    /* border: 2px solid gold; */
     height: 100%;
     /* text-align: start; */
   }
@@ -239,5 +240,9 @@ body {
     /* display: flex; */
     /* justify-content: flex-end; */
     /* position: absolute; */
+    /*To position a div you to take into 
+    consideration margins also*/
+    margin-left: auto;
+    margin-right: 0;
   }
 }
