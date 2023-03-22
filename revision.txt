@@ -1,0 +1,91 @@
+*********************************************************
+This is a revision of Grace from frontendmentor slack Community
+****************************************************
+@media (min-width: 850px) {
+  body {
+    display: flex ;
+    place-content: center;
+    /* gao: ; */
+    gap: 2rem;
+    font-size: 1.125rem;
+  }
+
+  .title {
+    /* text-align: center; */
+    /* padding-bottom: 1.5rem; */
+    /* font-size: 2rem; */
+    font-size: 2.4rem;
+    /* note: elements like titles don't have padding. There is no concept of 'internal space' for text elements'; */
+    max-width: 20ch;
+    line-height: 1.25;
+  }
+
+  .description {
+    /* text-align: center; */
+    /* padding-bottom: 1.5rem; */
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    max-width: 50ch;
+  }
+
+  .button {
+    /* padding-left: 4rem; */
+    /* padding-right: 4rem; */
+    /* border: none; */
+    border: 0;
+    /* note: why is this a button element? It would _navigate_ so must be an anchor element; */
+    text-align: center !important;
+    min-width: 11rem;
+  }
+
+  .bottom-section {
+    text-align: center;
+    gap: 1.5em;
+  }
+
+  .bottom-section > h1 {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .social {
+    /* display: iflex; */
+    /* display: inline-flex; */
+    /* justify-content: space-between; */
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .social > a {
+    /* width: 30px; */
+    /* height: 30px; */
+    width: 2.7rem;
+    height: 2.7rem;
+    text-align: center;
+    text-decoration: 0;
+    /* note: These all need an accessible name; */
+    font-size: 1.2rem;
+    transition: all 0.3s ease-out;
+  }
+
+  /* Inline #3 | https://zaktwo.github.io/huddle-landing-page-with-single-introductory-section-master-2/ */
+
+  .Top-section {
+    /* note: NOT a section element; */
+    flex: 1 1 56%;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    /* pgap: ; */
+    gap: 3.8rem;
+    padding-inline: 1rem;
+  }
+
+  header {
+    padding-inline: 1rem;
+  }
+}
